@@ -1,0 +1,118 @@
+.hero .container {
+  display: flex;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #fff;
+}
+
+.hero__info {
+  margin-top: 120px;
+}
+
+.hero__info__heading {
+  max-width: 720px;
+  width: 100%;
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  color: #ffffff;
+}
+
+.hero__info__heading > span {
+  border-bottom: 5px solid #4ee1a0;
+}
+
+.hero__info__paragraph {
+  max-width: 450px;
+  width: 100%;
+  padding-bottom: 65px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #d9d9d9;
+}
+
+.hero__info__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.28571px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4ee1a0;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.hero__info__link:hover {
+  color: #4ee1a0;
+}
+
+.hero__image {
+  margin-top: -70px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__info__heading {
+    padding-bottom: 40px;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.04545px;
+    color: #ffffff;
+  }
+  .hero__info__paragraph {
+    padding-bottom: 65px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #d9d9d9;
+  }
+  .hero__image {
+    margin-top: -80px;
+    width: 322px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hero__info {
+    margin-top: 60px;
+  }
+  .hero__info__paragraph {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .hero .container {
+    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__image {
+    order: -1;
+    margin-top: -80px;
+    width: 322px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero__info {
+    margin-top: 20px;
+  }
+  .hero__info__heading {
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.13636px;
+  }
+  .hero__info__paragraph {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}/*# sourceMappingURL=hero.css.map */
