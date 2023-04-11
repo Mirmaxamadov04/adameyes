@@ -16,33 +16,39 @@
   <body>
     <header class="header">
       <div class="container">
-        <img
-          src="./images/adamkeyes.svg"
-          alt=""
-          class="nav__logo"
-          width="170px"
-          height="32"
-        />
+        <a href="">
+          <img
+            src="./images/adamkeyes.svg"
+            alt=""
+            class="nav__logo"
+            width="170px"
+            height="32"
+          />
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="" class="nav__link">
-                <img src="./images/github.svg" alt="" />
+                <img src="./images/github.svg" alt="" class="nav__link-img" />
               </a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">
-                <img src="./images/frontendmentor.svg" alt="" />
+                <img
+                  src="./images/frontendmentor.svg"
+                  alt=""
+                  class="nav__link-img"
+                />
               </a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">
-                <img src="./images/LinkedIn.svg" alt="" />
+                <img src="./images/LinkedIn.svg" alt="" class="nav__link-img" />
               </a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">
-                <img src="./images/twitter.svg" alt="" />
+                <img src="./images/twitter.svg" alt="" class="nav__link-img" />
               </a>
             </li>
           </ul>
@@ -233,27 +239,41 @@
           </p>
         </div>
 
-        <form action="" class="form">
-          <label for="name" class="name__label">NAME</label>
-          <input type="text" id="name" class="name__input" />
+        <form action="#" class="form">
+          <!-- <label for="name" class="name__label">NAME</label> -->
+          <input type="text" id="name" class="name__input" placeholder="NAME" />
 
-          <label for="name" class="email__label">EMAIL</label>
-          <input type="email" id="email" class="email__input" />
+          <!-- <label for="name" class="email__label">EMAIL</label> -->
+          <input
+            type="email"
+            id="email"
+            class="email__input"
+            placeholder="EMAIL"
+          />
 
-          <label for="name" class="message__label">MESSAGE</label>
-          <input type="textare" id="email" class="message__input" />
+          <!-- <label for="name" class="message__label">MESSAGE</label> -->
 
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            class="message__input"
+            placeholder="MESSAGE"
+          ></textarea>
           <button class="form__button">SEND MESSAGE</button>
         </form>
 
         <div class="footer__bottom">
-          <img
-            src="./images/adamkeyes.svg"
-            alt=""
-            class="nav__logo"
-            width="170px"
-            height="32"
-          />
+          <a href="">
+            <img
+              src="./images/adamkeyes.svg"
+              alt=""
+              class="nav__logo footer__logo"
+              width="170px"
+              height="32"
+            />
+          </a>
           <nav class="nav">
             <ul class="nav__list footer__list">
               <li class="nav__item">
@@ -281,5 +301,6 @@
         </div>
       </div>
     </section>
+    <script src="./main.js"></script>
   </body>
 </html>

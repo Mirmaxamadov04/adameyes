@@ -41,6 +41,7 @@ button {
 
 @media only screen and (max-width: 620px) {
   .header .container {
+    padding: 0;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -54,6 +55,9 @@ button {
   }
   .nav__list > li {
     margin-left: 20px;
+  }
+  .nav__logo {
+    margin-top: 20px;
   }
 }
 .hero .container {
@@ -153,7 +157,7 @@ button {
   }
   .hero__image {
     order: -1;
-    margin-top: -80px;
+    margin-top: -100px;
     width: 322px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -190,6 +194,8 @@ button {
 }
 
 .skills__info__heading {
+  max-width: 300px;
+  width: 100%;
   padding-bottom: 14px;
   font-weight: 700;
   font-size: 48px;
@@ -206,6 +212,28 @@ button {
   color: #d9d9d9;
 }
 
+@media only screen and (max-width: 730px) {
+  .skills__info {
+    max-width: 270px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .skills__div {
+    justify-content: center;
+    text-align: center;
+  }
+  .skills__info__heading {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .skills__info__paragraph {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 .project .container {
   padding-top: 100px;
 }
@@ -323,6 +351,46 @@ button {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 1150px) {
+  .all-projects {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .project__info {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .project .container {
+    padding-top: 40px;
+  }
+  .project__top {
+    padding-bottom: 40px;
+  }
+  .project__top__heading {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.13636px;
+  }
+  .project__top__link {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.28571px;
+  }
+  .project__info__image {
+    width: 350px;
+    height: 260px;
+  }
+  .project__info__image {
+    padding-bottom: 20px;
+  }
+  .project__info__heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 .footer {
   background-color: #242424;
   margin-top: 100px;
@@ -363,8 +431,19 @@ button {
   flex-direction: column;
 }
 
-.form > label {
-  padding-left: 30px;
+.form > input::-moz-placeholder {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.222222px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.form > input::placeholder {
+  margin-bottom: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -375,6 +454,8 @@ button {
 }
 
 .form > input {
+  margin-bottom: 90px;
+  padding-left: 30px;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 16px;
@@ -425,4 +506,41 @@ button {
 
 .footer__list > li {
   margin-left: 30px;
+}
+
+.message__input {
+  margin-bottom: 90px;
+  padding-left: 30px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.222222px;
+  color: #ffffff;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+@media only screen and (max-width: 950px) {
+  .footer .container {
+    justify-content: center;
+  }
+  .footer__info {
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .footer__bottom {
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__list {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

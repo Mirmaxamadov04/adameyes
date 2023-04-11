@@ -239,6 +239,9 @@ button {
 .project__info {
   margin-bottom: 70px; }
 
+.none {
+  display: none; }
+
 .project__info__image {
   padding-bottom: 20px;
   transition: 0.3s all ease;
@@ -368,8 +371,9 @@ button {
   display: flex;
   flex-direction: column; }
 
-.form > label {
-  padding-left: 30px;
+.form > input::placeholder {
+  transform: translateY(-5px);
+  padding-bottom: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -379,6 +383,8 @@ button {
   opacity: 0.5; }
 
 .form > input {
+  margin-bottom: 90px;
+  padding-left: 30px;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 16px;
@@ -389,6 +395,9 @@ button {
   outline: none;
   border: none;
   border-bottom: 1px solid #ffffff; }
+
+.true {
+  border-bottom: 1px solid #4ee1a0; }
 
 .form__button {
   padding-bottom: 20px;
@@ -424,6 +433,20 @@ button {
 
 .footer__list > li {
   margin-left: 30px; }
+
+.message__input {
+  margin-bottom: 90px;
+  padding-left: 30px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.222222px;
+  color: #ffffff;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff; }
 
 @media only screen and (max-width: 950px) {
   .footer .container {

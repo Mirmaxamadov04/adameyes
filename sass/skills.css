@@ -14,6 +14,8 @@
 }
 
 .skills__info__heading {
+  max-width: 300px;
+  width: 100%;
   padding-bottom: 14px;
   font-weight: 700;
   font-size: 48px;
@@ -28,4 +30,27 @@
   font-size: 18px;
   line-height: 28px;
   color: #d9d9d9;
+}
+
+@media only screen and (max-width: 730px) {
+  .skills__info {
+    max-width: 270px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .skills__div {
+    justify-content: center;
+    text-align: center;
+  }
+  .skills__info__heading {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .skills__info__paragraph {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }/*# sourceMappingURL=skills.css.map */
